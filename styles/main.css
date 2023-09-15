@@ -14,6 +14,15 @@
     --mainColor: #043b52;
     --hoverColor: rgb(193, 64, 61);
 }
+* .black{
+    color: var(--mainColor);
+}
+* a.white.black{
+    color: var(--mainColor);
+}
+/* * a.white.black{
+    color: #fff;
+} */
 /* header section start  */
 .headerTop{
     padding: 3px 0;
@@ -53,7 +62,7 @@
     transition: all .3s ease;
     display: inline-block;
     text-decoration: none;
-    color: #043b52;
+    /* color: #043b52; */
 }
 .headerTop .linkInfo .item a i{
     margin-right: 3px;  
@@ -92,9 +101,6 @@
     cursor: pointer;
     padding: 0 5px;
     list-style: none;
-}
-.headerTop .btnsSettings ul li:last-child{
-    padding-right: 0;
 }
 .headerTop .btnsSettings ul li img{
     width: 20px;
@@ -159,10 +165,22 @@
 .headerTop .languages .language img{
     width: 20px;
 }
+.headerTop ul li.loginEnter{
+    padding: 5px 10px;
+    background: #043b52;
+    border-radius: 10px;
+}
 .headerTop ul li.loginEnter .login{
     position: relative;
 }
-.headerTop ul li .login .toHemis{
+.headerTop ul li.loginEnter span{
+    color: #fff;
+    text-transform: uppercase;
+}
+.headerTop ul li.loginEnter span img{
+    margin-right: 5px;
+}
+.headerTop ul li.loginEnter .toHemis{
     position: absolute;
     right: 0;
     bottom: 35px;
