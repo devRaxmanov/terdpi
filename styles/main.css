@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-weight: normal;
+    font-style: normal;
+}
+* dl, * ol, * ul {
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --mainColor: #043b52;
+    --hoverColor: rgb(193, 64, 61);
+}
+/* header section start  */
+.headerTop{
+    padding: 3px 0;
+    background-color: rgb(238, 238, 238);
+}
+.headerTop .topBlog{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerTop .linkInfo ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0;
+}
+.headerTop .linkInfo ul li{
+    border-right: 1px solid #043b52;
+    padding: 0 5px;
+    list-style: none;
+}
+.headerTop .linkInfo ul li:first-child{
+    padding-left: 0;
+    border-right: none;
+}
+.headerTop .linkInfo ul li:last-child{
+    border-right: none;
+}
+.headerTop .linkInfo .uzbInfo{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: #043b52;
+    display: flex;
+    align-items: center;
+}
+.headerTop .linkInfo .item a{
+    transition: all .3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: #043b52;
+}
+.headerTop .linkInfo .item a i{
+    margin-right: 3px;  
+}
+.headerTop .linkInfo .item a:hover{
+    color: var(--hoverColor);
+}
+.headerTop .linkInfo .uzbInfo .item{
+    margin-right: 4px;
+}
+.headerTop .linkInfo .uzbInfo .item:last-child{
+    margin-right: 0;
+}
+.headerTop .linkInfo ul li:first-child{
+    padding-left: 0;
+}
+.headerTop .linkInfo ul li img{
+    width: 24px;
+}
+.headerTop .linkInfo .item.gerb img{
+    width: 30px;
+}
+.headerTop .linkInfo .item.madhiya img{
+    width: 22px;
+}
+.headerTop .btnsSettings{
+    z-index: 10;
+}
+.headerTop .btnsSettings ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.headerTop .btnsSettings ul li{
+    cursor: pointer;
+    padding: 0 5px;
+    list-style: none;
+}
+.headerTop .btnsSettings ul li:last-child{
+    padding-right: 0;
+}
+.headerTop .btnsSettings ul li img{
+    width: 20px;
+}
+.headerTop .btnsSettings ul li .zoomPlus{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}
+.headerTop .btnsSettings ul li .zoomMinus{
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.headerTop .DayNightStyle .item{
+    display: none;
+}
+.headerTop .DayNightStyle .item.active{
+    display: block;
+}
+.headerTop .languages{
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    flex-direction: column;
+    overflow: hidden;
+    width: 60px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #043b52;
+    z-index: 11;
+    /* height: 100%; */
+}
+.headerTop .btnsSettings ul li.flags{
+    position: absolute;
+    top: -3px;
+    left: -70px;
+}
+.headerTop .languages .language{
+    order: 2;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.headerTop .languages .language.active{
+    order: 1;
+}
+.headerTop .languages .language.active span{
+    font-size: 14px;
+}
+.headerTop .languages .language.active img{
+    width: 25px;
+}
+.headerTop .languages .language span{
+    color: #fff;
+    font-size: 12px;
+    text-transform: lowercase;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.headerTop .languages .language img{
+    width: 20px;
+}
+.headerTop ul li.loginEnter .login{
+    position: relative;
+}
+.headerTop ul li .login .toHemis{
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    background-color: #043b52;
+}
+/* header section end  */
