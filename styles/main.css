@@ -102,6 +102,43 @@
     padding: 0 5px;
     list-style: none;
 }
+.headerTop .uzbInfo .item{
+    position: relative;
+}
+.headerTop .uzbInfo .item .infoItem{
+    background-color: var(--mainColor);
+    position: absolute;
+    left: -15px;
+    top: 38px;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    display: none;
+}
+.headerTop .uzbInfo .item .infoItem::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    background: var(--mainColor);
+    background-position: center;
+    background-size: cover;
+}
+.headerTop .uzbInfo .item .infoItem.active{
+    display: block;
+}
+.headerTop .uzbInfo .item .infoItem.gerb{
+    left: -10px;
+    display: block;
+}
+.headerTop .uzbInfo .item .infoItem.active{
+    display: block;
+}
 .headerTop .btnsSettings ul li img{
     width: 20px;
 }
