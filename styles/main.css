@@ -132,9 +132,8 @@
 .headerTop .uzbInfo .item .infoItem.active{
     display: block;
 }
-.headerTop .uzbInfo .item .infoItem.gerb{
+.headerTop .uzbInfo .item.gerb .infoItem{
     left: -10px;
-    display: block;
 }
 .headerTop .uzbInfo .item .infoItem.active{
     display: block;
@@ -159,6 +158,7 @@
     display: block;
 }
 .headerTop .languages{
+    transition: all 0.03s ease;
     display: flex;
     align-items: flex-start;
     justify-content: start;
