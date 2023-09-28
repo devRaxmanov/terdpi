@@ -12,7 +12,8 @@
 }
 :root{
     --mainColor: #043b52;
-    --hoverColor: rgb(193, 64, 61);
+    --hoverColor: rgb(194, 65, 55);
+    --hoverColorTwo: rgb(251, 255, 16);
 }
 * .black{
     color: var(--mainColor);
@@ -160,11 +161,11 @@
 .headerTop .languages{
     transition: all 0.03s ease;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: start;
     flex-direction: column;
     overflow: hidden;
-    width: 60px;
+    width: 65px;
     height: 35px;
     padding: 5px;
     border-radius: 10px;
@@ -199,6 +200,9 @@
     margin-left: 5px;
     font-weight: 600;
 }
+.headerTop .languages .language:hover span{
+    color: var(--hoverColorTwo);
+}
 .headerTop .languages .language img{
     width: 20px;
 }
@@ -217,10 +221,36 @@
 .headerTop ul li.loginEnter span img{
     margin-right: 5px;
 }
-.headerTop ul li.loginEnter .toHemis{
+.headerTop .login .toHemis{
+    padding: 5px 10px 5px 15px;
     position: absolute;
-    right: 0;
-    bottom: 35px;
+    right: -10px;
+    bottom: -70px;
+    width: 120px;
     background-color: #043b52;
+    border-radius: 10px;
+}
+.headerTop .login .toHemis::after{
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    background: var(--mainColor);
+    transform: rotate(45deg);
+}
+.headerTop .login .toHemis a{
+    transition: all .3s ease;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+}
+.headerTop .login .toHemis a:hover{
+    color: var(--hoverColorTwo);
+}
+.headerTop .login .toHemis a i{
+    position: relative;
+    right: 5px;
 }
 /* header section end  */

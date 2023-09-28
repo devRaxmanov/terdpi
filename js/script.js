@@ -77,14 +77,25 @@ window.addEventListener("DOMContentLoaded", ()=>{
         lenguages.addEventListener('mouseleave', ()=>{
             lenguages.style.height = '35px'
         })
-        
+        function removeClass(i) {
+            i.classList.remove("active")
+            
+        }
         languagesList.forEach((item)=>{
-            function romoveActive(i) {
-                i.classList.remove(active)
-            }
-            item.addEventListener("click", ()=>{
-                romoveActive(item)
-                item.classList.add('active')
+            languagesList[0].addEventListener('click', ()=>{
+                languagesList[2].classList.remove("active")
+                languagesList[1].classList.remove("active")
+                languagesList[0].classList.add("active")
+            })
+            languagesList[1].addEventListener('click', ()=>{
+                languagesList[0].classList.remove("active")
+                languagesList[2].classList.remove("active")
+                languagesList[1].classList.add("active")
+            })
+            languagesList[2].addEventListener('click', ()=>{
+                languagesList[0].classList.remove("active")
+                languagesList[1].classList.remove("active")
+                languagesList[2].classList.add("active")
             })
         })
     // header top script end 
