@@ -18,8 +18,9 @@ window.addEventListener("DOMContentLoaded", ()=>{
         coatOfArmsInfo = document.querySelector('#gerb'),
         anthemInfo = document.querySelector('#madhiya'),
         lenguages = document.querySelector('.headerTop .languages'),
-        languagesList = document.querySelectorAll('.headerTop .flags .language');
-        console.log(languagesList);
+        languagesList = document.querySelectorAll('.headerTop .flags .language'),
+        loginEnter = document.querySelector('.headerTop ul li.loginEnter'),
+        toHemis = document.querySelector('.headerTop .login .toHemis')
 
         stateFlag.addEventListener('mouseenter', ()=>{
             if (flagInfo.classList == 'infoItem') {
@@ -99,5 +100,13 @@ window.addEventListener("DOMContentLoaded", ()=>{
             })
         })
     // header top script end 
+        // login to hemis start
+        loginEnter.addEventListener('mouseenter', ()=>{
+            toHemis.style.display = 'block'
+        })
+        loginEnter.addEventListener('mouseleave', ()=>{
+            toHemis.style.display = 'none'
+        })
+
 
 })
