@@ -263,3 +263,68 @@
     right: 5px;
 }
 /* header section end  */
+
+/* banner section style start  */
+.banner{
+    overflow: hidden;
+    height: 95vh;
+}
+.banner .bannerHeader{
+    position: relative;
+}
+.banner .bannerHeader .forBackgraound{
+    position: absolute;
+    top: -80px;
+    left: -150px;
+    width: 130%;
+    z-index: -1;
+    animation-name: anim01;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes anim01 {
+    0%{
+        transform: scale(2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: translate(-90px -150px);
+    }
+}
+.banner .bannerHeader .forBackgraound img{
+    width: 100%;
+    object-fit: cover;
+}
+.banner .bannerLogoNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner .bannerHeader{
+    background: rgba(255, 255, 255, .6);
+    padding: 10px 0;
+}
+.banner .bannerLogoNavbar .mainLogo img{
+    width: 35%;
+}
+.banner .bannerLogoNavbar .navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.banner .navbar ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+.banner .navbar ul li:last-child{
+    padding-right: 0;
+}
+.banner .navbar ul li a{
+    color: var(--mainColor);
+    font-weight: 500;
+    display: inline-block;
+    text-decoration: none;
+}
+/* banner section style end  */
