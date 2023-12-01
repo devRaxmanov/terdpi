@@ -93,7 +93,7 @@ header{
     width: 22px;
 }
 .headerTop .btnsSettings{
-    z-index: 10;
+    z-index: 999;
 }
 .headerTop .btnsSettings ul{
     position: relative;
@@ -120,6 +120,7 @@ header{
     border-radius: 10px;
     color: #fff;
     display: none;
+    z-index: 999;
 }
 .headerTop .uzbInfo .item .infoItem::after{
     content: '';
@@ -173,7 +174,6 @@ header{
     padding: 5px;
     border-radius: 10px;
     background-color: #043b52;
-    z-index: 11;
     /* height: 100%; */
 }
 .headerTop .btnsSettings ul li.flags{
@@ -266,6 +266,7 @@ header{
     right: 5px;
 }
 header .secretMenu{
+    background-color: #043b52;
     position: absolute;
     top: 0;
     left: 0;
