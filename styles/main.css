@@ -266,7 +266,7 @@ header{
     right: 5px;
 }
 header .secretMenu{
-    background-color: #043b52;
+    background-color: rgb(4, 59, 82);
     position: absolute;
     top: 0;
     left: 0;
@@ -279,20 +279,13 @@ header .secretMenu{
     height: 95vh;
 }
 .banner .bannerHeader{
-    background: rgba(255, 255, 255, .75);
+    background: rgba(4, 59, 82, .75);
     padding: 10px 0;
     position: relative;
     z-index: 99;
 }
 .banner .bannerHeader .forBackgraound{
-    position: absolute;
-    top: -80px;
-    left: -150px;
-    width: 130%;
-    z-index: -1;
-    animation-name: anim01;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
+    position: relative;
 }
 @keyframes anim01 {
     0%{
@@ -309,8 +302,16 @@ header .secretMenu{
     }
 }
 .banner .bannerHeader .forBackgraound img{
+    position: absolute;
     width: 100%;
     object-fit: cover;
+    top: -80px;
+    left: -150px;
+    width: 130%;
+    z-index: -1;
+    animation-name: anim01;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
 }
 .banner .bannerLogoNavbar{
     display: flex;
@@ -333,7 +334,7 @@ header .secretMenu{
     padding-right: 0;
 }
 .banner .navbar ul li a{
-    color: var(--mainColor);
+    color: #fff;
     font-weight: 500;
     display: inline-block;
     text-decoration: none;
