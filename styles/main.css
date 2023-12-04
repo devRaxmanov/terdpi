@@ -265,11 +265,71 @@ header{
     position: relative;
     right: 5px;
 }
-header .secretMenu{
-    background-color: rgb(4, 59, 82);
+.banner .secretMenu{
+    z-index: 9999;
+    position: relative;
+    background: #fff;
+}
+.banner .secretMenu .asosiy .viewMenuAll{
+    display: none;
+}
+.banner .secretMenu::after{
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
+    height: 400px;
+    width: 100%;
+    background-color: #fff;
+    z-index: -2;
+    box-shadow: 0 0 10px rgba(4, 59, 82, .75);
+}
+.banner .secretMenu::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    height: 400px;
+    width: 400px;
+    background: url('../images/vectors/menuImg.jpg');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 65%;
+    z-index: 1;
+}
+.banner .secretMenuSection{
+    padding: 20px 0;
+    box-shadow: 0 0 5px rgba(4, 59, 82, .75);
+    background-color: rgb(238, 238, 238);
+}
+.banner .secretMenu .asosiy .viewMenuAll.active{
+    display: block;
+    position: relative;
+}
+.banner .secretMenu .viewMenuAll.active .itemList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner .secretMenu .viewMenuAll.active .itemList li{
+    list-style: none;
+}
+.banner .secretMenu .viewMenuAll.active .itemList li a{
+    transition: all .3s ease;
+    display: inline-block;
+    color: #043b52;
+    text-decoration: none;
+    font-weight: 600;
+}
+.banner .secretMenu .viewMenuAll.active .itemList li a:hover{
+    color: var(--hoverColor);
+}
+
+.banner .secretMenu .asosiy .viewMenuAll.active .miniMenu{
+    display: none;
+}
+.banner .secretMenu .asosiy .viewMenuAll.active .miniMenu{
+    display: none;
 }
 /* header section end  */
 
@@ -338,6 +398,10 @@ header .secretMenu{
     font-weight: 500;
     display: inline-block;
     text-decoration: none;
+    transition: all .3s ease;
+}
+.banner .navbar ul li a:hover{
+    color: var(--hoverColor);
 }
 /* banner section style end  */
 
@@ -346,7 +410,7 @@ header .secretMenu{
 .banner .sliderBanner{
     z-index: 98;
     position: relative;
-    top: -80px;
+    top: -150px;
     left: 0;
 }
 .banner .swiper{
