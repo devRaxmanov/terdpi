@@ -288,7 +288,7 @@ header{
     content: '';
     position: absolute;
     top: 30px;
-    left: 30px;
+    left: 20px;
     height: 400px;
     width: 400px;
     background: url('../images/vectors/menuImg.jpg');
@@ -315,11 +315,27 @@ header{
     list-style: none;
 }
 .banner .secretMenu .viewMenuAll.active .itemList li a{
+    position: relative;
     transition: all .3s ease;
     display: inline-block;
     color: #043b52;
     text-decoration: none;
     font-weight: 600;
+    z-index: 99;
+}
+.banner .secretMenu .viewMenuAll.active .miniMenuItem.active a{
+    color: var(--hoverColor);
+}
+.banner .secretMenu .viewMenuAll.active .miniMenuItem.active a::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20%;
+    width: 140%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    z-index: -1;
 }
 .banner .secretMenu .viewMenuAll.active .itemList li a:hover{
     color: var(--hoverColor);
