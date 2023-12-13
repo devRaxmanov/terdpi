@@ -282,7 +282,7 @@ header{
     width: 100%;
     background-color: #fff;
     z-index: -2;
-    box-shadow: 0 0 10px rgba(4, 59, 82, .75);
+    box-shadow: 0 5px 5px rgba(4, 59, 82, .75);
 }
 .banner .secretMenu::before{
     content: '';
@@ -298,8 +298,9 @@ header{
     z-index: 1;
 }
 .banner .secretMenuSection{
+    z-index: -2;
     padding: 20px 0;
-    box-shadow: 0 0 5px rgba(4, 59, 82, .75);
+    box-shadow: 0 3px 3px rgba(4, 59, 82, .75);
     background-color: rgb(238, 238, 238);
 }
 .banner .secretMenu .asosiy .viewMenuAll.active{
@@ -410,6 +411,7 @@ header{
     padding-right: 0;
 }
 .banner .navbar ul li a{
+    position: relative;
     color: #fff;
     font-weight: 500;
     display: inline-block;
@@ -417,6 +419,20 @@ header{
     transition: all .3s ease;
 }
 .banner .navbar ul li a:hover{
+    color: var(--hoverColor);
+}
+.banner .navbar ul li.active a::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -20%;
+    width: 140%;
+    height: 80px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 15px;
+    z-index: -1;
+}
+.banner .navbar ul li.active a{
     color: var(--hoverColor);
 }
 /* banner section style end  */
