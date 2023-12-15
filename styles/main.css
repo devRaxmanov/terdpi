@@ -345,8 +345,17 @@ header{
 .banner .secretMenu .asosiy .viewMenuAll.active .miniMenu{
     display: none;
 }
-.banner .secretMenu .asosiy .viewMenuAll.active .miniMenu{
-    display: none;
+.banner .secretMenu .asosiy .viewMenuAll.active .miniMenu.active{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    display: block;
+}
+.banner .secretMenu .viewMenuAll.active .miniMenu.active li{
+    margin-bottom: 15px;
+}
+.banner .secretMenu .viewMenuAll.active .miniMenu.active li a{
+    font-weight: 400;
 }
 /* header section end  */
 
@@ -424,10 +433,10 @@ header{
 .banner .navbar ul li.active a::after{
     content: '';
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: -20%;
     width: 140%;
-    height: 80px;
+    height: 90px;
     background-color: rgb(238, 238, 238);
     border-radius: 15px;
     z-index: -1;
