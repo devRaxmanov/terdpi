@@ -129,4 +129,24 @@ window.addEventListener("DOMContentLoaded", ()=>{
             el: '.swiper-scrollbar',
         },
         });
+
+
+
+        const mainMenuList = document.querySelectorAll('.mainMenuList')
+        function removeActive(i) {
+            i.classList.remove('active')            
+        }
+        function mainMenuActive() {
+            mainMenuList.forEach((item)=>{
+                item.addEventListener('mouseenter', ()=>{
+                    removeActive(item)
+                    item.classList.add('active')
+                })
+                item.addEventListener('mouseleave', ()=>{
+                    removeActive(item)
+                })
+            })
+        }
+        mainMenuActive()
+
 })
